@@ -22,7 +22,7 @@ function App() {
               Thanpisit Suriyaroj
             </h1>
             <h2 className="text-xl md:text-2xl font-medium text-blue-600 mt-2">
-              Full-Stack Developer
+              Portfolio
             </h2>
           </div>
           <div className="mt-6 md:mt-0 flex flex-col space-y-3 text-sm text-slate-600">
@@ -35,7 +35,7 @@ function App() {
               className="flex items-center gap-3 hover:text-blue-600 transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span>082 188 1400</span>
+              <span>082-188-1400</span>
             </a>
             <a
               href="mailto:thanpisitsuriyaroj@gmail.com"
@@ -66,7 +66,7 @@ function App() {
               Summary
             </h3>
             <p className="text-slate-600 leading-relaxed text-lg">
-              Full-Stack Developer with a strong background in building web
+              {"  "}Full-Stack Developer with a strong background in building web
               applications from start to finish. Skilled in creating clean user
               interfaces with{" "}
               <span className="font-semibold text-slate-800">Angular</span> and{" "}
