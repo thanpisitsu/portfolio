@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Happy Birthday, Pumpui! 🎂💖</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Dancing+Script:wght@600;700&family=Nunito:wght@400;600;700;800;900&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Background Elements & Canvas -->
+  <div id="bg-decorations"></div>
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Main Multi-stage Interactive Container -->
+  <main class="app-container">
+
+    <!-- STAGE 1: Mystery Surprise Box -->
+    <section id="stage-gift" class="stage active">
+      <div class="gift-scene">
+        <h1 class="glow-title">Happy Birthday Pumpui</h1>
+        <p class="subtitle">เอาของขวัญมาให้แล้ว</p>
+
+        <div style="position: relative; display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 2rem;"> 
+        
+        <div class="gift-box-wrapper" id="gift-box-trigger">
+          <div class="gift-box animate-bounce-gentle">
+            <div class="gift-lid">
+              <div class="ribbon-bow">
+                <div class="bow-left"></div>
+                <div class="bow-right"></div>
+                <div class="bow-center"></div>
+              </div>
+            </div>
+            <div class="gift-body">
+              <div class="gift-ribbon-vertical"></div>
+              <div class="gift-ribbon-horizontal"></div>
+              <div class="gift-tag">For Pumpui 💖</div>
+            </div>
+          </div>
+          <div class="pulse-ring"></div>
+        </div>
+
+        <button id="btn-open-gift" class="primary-btn pulse-btn">
+          <span>เปิดกล่อง 🎁</span>
+        </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGE 2: Birthday Cake & Blow the Candle -->
+    <section id="stage-cake" class="stage">
+      <div class="cake-scene">
+        <h2 class="title-cursive">เป่าเทียน ✨</h2>
+        <p class="subtitle">หลับตา อธิษฐานแล้วกดที่เทียนเลย</p>
+
+        <!-- Cute 3D Style Animated Cake -->
+        <div class="cake-container" id="cake-trigger">
+          <div class="plate"></div>
+          <div class="cake">
+            <div class="cake-layer layer-bottom">
+              <div class="frosting-drops">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="cake-layer layer-middle">
+              <div class="strawberry s1">🍓</div>
+              <div class="strawberry s2">🍓</div>
+              <div class="strawberry s3">🍓</div>
+            </div>
+            <div class="cake-layer layer-top">
+              <div class="frosting-cream"></div>
+              <!-- Candle -->
+              <div class="candle" id="candle">
+                <div class="flame" id="flame"></div>
+                <div class="smoke" id="smoke"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="wish-result" class="wish-message hidden">
+          <div class="wish-bubble">
+            <h3>🎉เย่ สุขสันต์วันเกิด 🥳</h3>
+            <p>ขอให้พรเป็นจริง</p>
+          </div>
+        </div>
+
+        <button id="btn-to-letter" class="primary-btn hidden">
+          <span>ไปอ่านจดหมายกัน 💌</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- STAGE 3: Romantic Envelope & Love Letter -->
+    <section id="stage-letter" class="stage">
+      <div class="letter-scene">
+
+        <div class="envelope-wrapper" id="envelope">
+          <div class="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-pocket"></div>
+            
+            <!-- Letter Card that slides out -->
+            <article class="letter-card" id="letter-card">
+              <div class="letter-pattern-border">
+                <div class="letter-header">
+                  <div class="letter-salutation">To Pumpui 💖</div>
+                </div>
+                
+                <div class="letter-body">
+                  <p>
+                    Happy birthday น้องปุ้มปุ้ย 🎉
+                     ขอให้มีความสุขมากๆ ในวันเกิดปีนี้นะค้าบ ให้อยู่ด้วยกันไปนานๆ
+                    ตีกันบ้าง ทะเลาะกันบ้าง แต่รักกันตลอด 💖
+                  </p>
+                  <p class="letter-highlight">
+                    "Happy Birthday!"
+                  </p>
+                </div>
+
+                <div class="letter-footer">
+                  <div class="with-love">With all my love, always,</div>
+                  <div class="signature">Thanpisit 💕</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sweet Bottom Footer -->
+  <footer class="app-footer">
+    <p>From Premier 💖</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
